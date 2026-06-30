@@ -1,0 +1,28 @@
+*.tmp
+*.Backup*
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# Temp files
+*.tmp
+*.Backup*
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# Secrets
+appsettings.Development.json
+.env
+.env.*

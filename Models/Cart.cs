@@ -1,0 +1,10 @@
+﻿namespace backend.Models;
+
+public class Cart
+{
+    public int Id { get; set; }
+    public int UserId { get; set; }
+    public User User { get; set; } = null!;
+    public ICollection<CartItems> Items { get; set; } = new List<CartItems>();
+
+}
