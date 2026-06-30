@@ -25,11 +25,11 @@ public static class SeedData
         {
             var categories = new List<Category>
             {
-                new Category {Name="Men",ImageUrl="/images/categories/men.jpg"},
-                new Category {Name="Women",ImageUrl="/images/categories/women.jpg"},
-                new Category {Name="Footwear",ImageUrl="/images/categories/shoes.jpeg"},
-                new Category {Name="Accessories",ImageUrl="/images/categories/accessories.jpg"},
-                new Category {Name="Sale",ImageUrl="/images/categories/sale.jpg"}
+                new Category {Name="Men",ImageUrl="men.jpg"},
+                new Category {Name="Women",ImageUrl="women.jpg"},
+                new Category {Name="Footwear",ImageUrl="shoes.jpeg"},
+                new Category {Name="Accessories",ImageUrl="accessories.jpg"},
+                new Category {Name="Sale",ImageUrl="sale.jpg"}
             };
             context.Categories.AddRange(categories);
             context.SaveChanges();
@@ -45,7 +45,7 @@ public static class SeedData
                     Description = "Premium cotton shirt",
                     Price = 1499,
                     Quantity = 50,
-                    ImageUrl = "/images/categories/whiteoxfordshirt.webp",
+                    ImageUrl = "whiteoxfordshirt.webp",
                     CategoryId = 1
                 },
 
@@ -55,7 +55,7 @@ public static class SeedData
                     Description = "Blue denim",
                     Price = 1999,
                     Quantity = 30,
-                    ImageUrl = "/images/categories/slimfitjeans.webp",
+                    ImageUrl = "slimfitjeans.webp",
                     CategoryId = 1
                 },
 
@@ -65,7 +65,7 @@ public static class SeedData
                     Description = "Floral dress",
                     Price = 2499,
                     Quantity = 20,
-                    ImageUrl = "/images/categories/summerdress.webp",
+                    ImageUrl = "summerdress.webp",
                     CategoryId = 2
                 },
 
@@ -75,7 +75,7 @@ public static class SeedData
                     Description = "Gold chain with seashell pendant",
                     Price = 200,
                     Quantity = 40,
-                    ImageUrl = "/images/categories/pendantnecklace.webp",
+                    ImageUrl = "pendantnecklace.webp",
                     CategoryId = 4
                 },
 
@@ -85,7 +85,7 @@ public static class SeedData
                     Description = "White sneakers with gold laces",
                     Price = 1399,
                     Quantity = 15,
-                    ImageUrl = "/images/categories/whitesneakers.webp",
+                    ImageUrl = "whitesneakers.webp",
                     CategoryId = 3
                 }
 
