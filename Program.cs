@@ -62,14 +62,16 @@ builder.Services.AddScoped<GeminiService>();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("ReactPolicy",
-        policy =>
-        {
-            policy.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod();
-        }
-    );
-});
-var app = builder.Build();
+    options.AddPolicy("ReactPolicy", policy =>
+    {
+        policy.WithOrigins(
+                "http://localhost:5173",
+                "https://voguez-interface.vercel.app"
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+}); var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
