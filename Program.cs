@@ -7,6 +7,8 @@ using System.Text;
 using backend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -66,7 +68,6 @@ builder.Services.AddCors(options =>
             policy.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod();
         }
     );
-});
 
 var app = builder.Build();
 
